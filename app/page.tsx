@@ -6,7 +6,7 @@ import { CopyrightYear } from "./components/copyright-year";
 function Navbar() {
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 border-b border-white/5 bg-[#050507]/80 backdrop-blur-xl">
-      <div className="mx-auto flex h-16 max-w-6xl items-center justify-between px-6">
+      <div className="mx-auto flex min-h-16 max-w-6xl flex-wrap items-center justify-between gap-x-4 gap-y-2 px-4 py-3 sm:h-16 sm:flex-nowrap sm:px-6 sm:py-0">
         <Link
           href="/"
           className="text-lg font-bold tracking-tight text-white"
@@ -14,7 +14,7 @@ function Navbar() {
           <span className="text-violet-400">D</span>ave Elda
         </Link>
 
-        <div className="flex items-center gap-8">
+        <div className="flex w-full items-center justify-center gap-4 sm:w-auto sm:justify-end sm:gap-8">
           <Link
             href="/"
             className="text-sm text-zinc-400 transition-colors hover:text-white"
@@ -26,6 +26,12 @@ function Navbar() {
             className="text-sm text-zinc-400 transition-colors hover:text-white"
           >
             About
+          </Link>
+          <Link
+            href="/tags"
+            className="rounded-full border border-violet-500/30 bg-violet-500/10 px-3 py-1.5 text-sm font-medium text-violet-300 transition-all hover:border-violet-500/50 hover:bg-violet-500/20 hover:text-white"
+          >
+            Tag Cleaner
           </Link>
           <Link
             href="#contact"
